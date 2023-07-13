@@ -1,0 +1,24 @@
+.textlogin{
+    text-align: center;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box1{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p{
+    text-align: center;
+}
+.eyeicon{
+    width: 20px;
+    position: relative;
+    bottom: 37px;
+    left: -20px;
+    float: right;
+}

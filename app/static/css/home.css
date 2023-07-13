@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/static/img/home_bg.jpg");
+}
+.navbar img{
+    position: relative;
+    left:10px;
+    bottom: 20px;
+    width: 280px;
+    height: 200px;
+}
+.nav-item {
+    font-size: 15px;
+    margin: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link{
+    border-radius: 5px;
+    color: #ffffff !important;
+}
+#a{
+    color: #000000 !important;
+    background-color: #ffe600;
+}
+.nav-link:hover{
+    color: #000000 !important;
+    background-color: #ffe600 !important;
+}
+.text{
+    position: relative;
+    bottom: 200px;
+
+}
+.text p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    color: #fff ;
+}
+.navbar1{
+    position: absolute;
+    top: -26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    bottom: 180px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.Date{
+    position: absolute;
+    right: 200px;
+    bottom: 300px;
+}
+.Date p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.tv{
+    position: relative;
+    bottom: 80px;
+}
+.tv p{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.prebook{
+    position: absolute;
+    right: 150px;
+    bottom: 70px;
+}
+.prebook button{
+    border-radius: 5px;
+    border-style: none;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.prebook button:hover{
+    background-color: #ffe600;
+    color: #000000;
+}
+.dropdown{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 92%;
+    width: 10%;
+    left: 80%;
+    
+}
+.dropbtn {
+    background: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    height: 148px;
+    background-color:rgba(0, 0, 0, 0.5);
+    min-width: 100px;
+    
+}
+.dropdown-content a {
+    margin-top: 11px;
+    padding: 0px 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    
+}
+.dropdown-content a:hover {
+    background-color: #ffe600;
+    color: #000000;
+}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+
+ @media screen and (max-width: 700px){
+    body{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        background-color: rgb(0, 0, 0) !important;
+        background-attachment: fixed !important;
+        overflow: hidden !important;
+        /*
+        background-position: center center;
+
+        background-repeat: no-repeat; background-size: cover;
+        background-image: url(images/background-desktop.jpg);*/
+      }
+    .container-fluid{
+        background-color: aquamarine;
+        background-image: none;
+    }
+
+    .text p{
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff ;
+    }
+    .text{
+        position: absolute;
+        top: 41%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+    }
+    .navbar1{
+        background-color: none !important;
+        height: 4%;
+        position: absolute;
+        top: 3%;
+        left: 45%;
+    }
+    #logo{
+        position: absolute;
+        top: 2%;
+        left: 30%;
+    }
+    .Date{
+        position: absolute;
+        top: 44%;
+        left: 35%;
+    }
+    .Date p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+    .tv{
+        position: absolute;
+        top: 60%;
+        left: -13%;
+    }
+    .tv p{
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+    .prebook{
+        position: absolute;
+        bottom: 20%;
+    }
+    .nav-item {
+        font-size: 10px;
+        margin: 2px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .navbar img{
+        position: relative;
+        top: 30px !important;
+        left: 45px !important;
+        width: 200px;
+        height: 140px;
+    }
+    .show-btn{
+        visibility: hidden;
+    }
+ }

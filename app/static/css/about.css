@@ -1,0 +1,126 @@
+
+.contain{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.text1 h1{ 
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    color: #ffe600 !important;
+}
+.text2 p{
+    word-spacing: 2px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff !important;
+}
+
+/*
+.hline{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffe600;
+    height: 2px;
+    width: 32%;
+}
+.hline2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffe600;
+    height: 2px;
+    width: 32%;
+}*/
+.aboutimg img{
+    position: absolute;
+    top: 12%;
+    left: 4%;
+    height: 85%;
+    width: 45%;
+}
+.textbox1{
+    position: absolute;
+    right: 8%;
+    top: 28%;
+    text-align: start;
+}
+.textbox2{
+    text-align: start;
+}
+.textbox2 h4{
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffe600;
+}
+.textbox2 p{
+    position: relative;
+    left: 35px;
+    top: -5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 32px;
+}
+.callicon img{
+    position: relative;
+    top: -90px;
+    height: 15%;
+    width: 8%;
+    left: -8px;
+}
+.mailicon img{
+    position: relative;
+    top: -89px;
+    left: -1px;
+    height: 5%;
+    width: 5%;
+}
+.textbox3 h4{
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffe600;
+}
+.textbox3{
+    position: relative;
+    top: -45px;
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul{
+    display: flex;
+}
+.twittericon{
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    height: 22px; 
+    width: 22px;
+}
+.linkedinicon{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    height: 22px; 
+    width: 22px;
+}
+.instagramicon{
+    position: absolute;
+    top: 30px;
+    left: 65px;
+    height: 22px; 
+    width: 22px;
+}
+.facebookicon{
+    position: absolute;
+    top: 30px;
+    left: 95px;
+    height: 22px; 
+    width: 22px;
+}

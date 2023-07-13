@@ -1,0 +1,170 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif !important;
+	color: #000000;
+
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+.show-btn{
+	position: absolute;
+	top: 2.5% !important;
+	right: 18% !important;
+	color: #000000 !important;
+	/*border: #ffe600 1px solid;*/
+	background-color: #ffffff;
+	border-radius: 5px;
+	/*background: none;*/
+	font-weight: 800 !important ;
+    font-family: 'Montserrat', sans-serif !important ;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.sg{
+    position: absolute;
+    top: 2.5%;
+    right: 12%;
+}
+.show-btnuser{
+	position: absolute;
+	top: 2.5% !important;
+	right: 20% !important;
+	color: #ffffff !important;
+	/*border: #ffe600 1px solid;*/
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	/*background: none;*/
+	font-weight: 800 !important ;
+    font-family: 'Montserrat', sans-serif !important ;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.sguser{
+    position: absolute;
+    top: 2.5%;
+    right: 12%;
+	
+}
+.show-btnuser:hover{
+	color: #000000 !important;
+	border-color: none;
+	border: none;
+	background-color: #ffe600;
+}
+
+
+.show-btn:hover{
+	color: #000000 !important;
+	border-color: none;
+	border: none;
+	background-color: #ffe600;
+}
+.container{
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 5px;
+}
+.container{
+	display: none;
+	width: 410px !important;
+	padding: 30px !important;
+}
+.container .logintext{
+	color: #000000;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+}
+.container form{
+	margin-top: -25px;
+}
+.container form .data{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form .data label{
+	font-size: 18px;
+}
+form .data input{
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	font-size: 17px;
+	border: 1px solid;
+}
+.forgot-pass{
+	font-size: 15px;
+	margin: 30px 0 10px 0;
+}
+form .btn{
+	height: 45px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	border: none;
+	border-radius: 0px;
+}
+form .btn .inner{
+	height: 100% !important;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	z-index: -1;
+	background-color: #ffe600;
+}
+form .btn:hover .inner{
+	background-color: #ffea32;
+}
+form .btn button{
+	height: 38px;
+	width: 100%;
+	background: none;
+	border: none;
+	color: black;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+form .signup-link{
+	margin-top: 20px;
+	text-align: center;
+}
+form .signup-link a{
+	text-decoration: none;
+}
+.container .close-btn{
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	font-weight: 1000 !important;
+	font-size: 18px;
+	cursor: pointer;
+}
+.close-btn{
+	color: rgb(0, 0, 0);
+}
+.bg1{
+	height: 50%;
+	width: 50%;
+	background-color: black;
+}
+
+.profile{
+	position: relative;
+	bottom: 80%;
+}
+

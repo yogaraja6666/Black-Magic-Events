@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%load static%}
+    <title>Events</title>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+    <link rel="stylesheet" href="{% static 'css/levent1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/levent2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/levent3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/levent4.css' %}">
+    <link rel="stylesheet" href="{% static 'css/uevent1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/uevent2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/uevent3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/uevent4.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contain">
+        <div class="navbar1">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="a" href="{% url 'eventspage' %}">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about' %}">About<a>
+                  </li>
+                  {% if request.user.is_authenticated %}
+                  
+                  <!----
+                <li class="nav-item">
+                    <a class="nav-link" id="" href="">{{request.user}}<a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="" href="{% url 'logout' %}">Logout<a>
+                </li>-->
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" id="" href="{% url 'join' %}">Join<a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="" href="{% url 'login' %}">login<a>
+                </li>
+                {% endif %}
+                  
+                  <!--
+                  <li class="nav-item">
+                      <a class="nav-link" href="/login page/login.html">Login<a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/sign up page/signup.html">SignUp<a>
+                  </li>-->
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="{%static 'img/Logo2.png' %}">
+        </div>
+        <div class="ltevents">
+            <p class="latestevent">Latest Events</p>
+            <div class="hline"></div>
+            <div class="hline2"></div>
+        </div>
+        <div class="latesteventimge">
+            {% for i in lttsevent1 %}
+            <div class="latestevent1" style="background-image: url({{i.image.url}});">
+                <div class="linktext1">
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'aevents' %}">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                    {% else %}
+                    <a href="{% url 'login' %}">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+            {% for i in lttsevent2 %}
+            <div class="latestevent2" style="background-image: url({{i.image.url}});">
+                <div class="linktext2">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% for i in lttsevent3 %}
+            <div class="latestevent3" style="background-image: url({{i.image.url}});">
+                <div class="linktext3">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% for i in lttsevent4 %}
+            <div class="latestevent4" style="background-image: url({{i.image.url}});">
+                <div class="linktext4">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+            <p class="upcomingevent">Upcoming Events</p>
+        <div class="upcomingeventimge">
+            {% for i in upcevent1 %}
+            <div class="upcomingevent1" style="background-image: url({{i.image.url}});">
+                <div class="linktext5">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% for i in upcevent2 %}
+            <div class="upcomingevent2" style="background-image: url({{i.image.url}});">
+                <div class="linktext6">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% for i in upcevent3 %}
+            <div class="upcomingevent3" style="background-image: url({{i.image.url}});">
+                <div class="linktext7">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% for i in upcevent4 %}
+            <div class="upcomingevent4" style="background-image: url({{i.image.url}});">
+                <div class="linktext7">
+                    <a href="">{{i.line1}}<br>{{i.line2}}<br>{{i.line3}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% if request.user.is_authenticated %}
+            {% include 'myprofile.html' %}
+        {% endif %}
+    </div>
+    
+</body>
